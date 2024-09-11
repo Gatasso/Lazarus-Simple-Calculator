@@ -1,0 +1,113 @@
+object Form1: TForm1
+  Left = 1147
+  Height = 620
+  Top = 163
+  Width = 773
+  Caption = 'Form1'
+  ClientHeight = 620
+  ClientWidth = 773
+  LCLVersion = '2.2.0.4'
+  object bt1: TButton
+    Tag = 1
+    Left = 136
+    Height = 96
+    Top = 152
+    Width = 115
+    Caption = '1'
+    OnClick = btCLick
+    TabOrder = 0
+  end
+  object bt10: TButton
+    Tag = 10
+    Left = 304
+    Height = 96
+    Top = 152
+    Width = 115
+    Caption = '10'
+    OnClick = btCLick
+    TabOrder = 1
+  end
+  object bt100: TButton
+    Tag = 100
+    Left = 136
+    Height = 96
+    Top = 288
+    Width = 115
+    Caption = '100'
+    OnClick = btCLick
+    TabOrder = 2
+  end
+  object bt1000: TButton
+    Tag = 1000
+    Left = 304
+    Height = 96
+    Top = 288
+    Width = 115
+    Caption = '1000'
+    OnClick = btCLick
+    TabOrder = 3
+  end
+  object visor: TPanel
+    Left = 464
+    Height = 232
+    Top = 152
+    Width = 170
+    ClientHeight = 232
+    ClientWidth = 170
+    TabOrder = 4
+    object lblNumero: TLabel
+      Left = 40
+      Height = 1
+      Top = 104
+      Width = 1
+      Font.Height = -29
+      Font.Name = 'Sans'
+      ParentFont = False
+    end
+  end
+  object btSum: TButton
+    Left = 136
+    Height = 40
+    Top = 423
+    Width = 56
+    Caption = '+'
+    OnClick = btMathClick
+    TabOrder = 5
+  end
+  object btMinus: TButton
+    Left = 208
+    Height = 40
+    Top = 424
+    Width = 56
+    Caption = '-'
+    OnClick = btMathClick
+    TabOrder = 6
+  end
+  object btMult: TButton
+    Left = 288
+    Height = 40
+    Top = 423
+    Width = 56
+    Caption = '*'
+    OnClick = btMathClick
+    TabOrder = 7
+  end
+  object btDivide: TButton
+    Left = 363
+    Height = 40
+    Top = 423
+    Width = 56
+    Caption = '/'
+    OnClick = btMathClick
+    TabOrder = 8
+  end
+  object btEquals: TButton
+    Left = 464
+    Height = 40
+    Top = 423
+    Width = 170
+    Caption = '='
+    OnClick = btEqualsClick
+    TabOrder = 9
+  end
+end
