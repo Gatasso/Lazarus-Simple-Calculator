@@ -20,12 +20,17 @@ type
     btEquals: TButton;
     btMinus: TButton;
     btMult: TButton;
+    btSignal: TButton;
     btSum: TButton;
+    btDel: TButton;
     lblNumero: TLabel;
     visor: TPanel;
     procedure btCLick(Sender: TObject);
+    procedure btDelClick(Sender: TObject);
     procedure btEqualsClick(Sender: TObject);
     procedure btMathClick(Sender: TObject);
+    procedure btSignalClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
 
   private
 
@@ -62,6 +67,13 @@ var operation: array[0..1] of double;
      end;
   end;
 
+procedure TForm1.btDelClick(Sender: TObject);
+var erased: string;
+begin
+   erased:= Copy(lblNumero.Caption,1,Length(lblNumero.Caption) -1);
+   lblNumero.Caption:= erased;
+end;
+
   procedure TForm1.btMathClick(Sender: TObject);
     var buttonOp: TButton;
     begin
@@ -95,6 +107,18 @@ var operation: array[0..1] of double;
       end;
 
     end;
+
+procedure TForm1.btSignalClick(Sender: TObject);
+var newValue: double;
+begin
+    newValue:= -(StrToFLoat(lblNumero.Caption));
+    lblNumero.Caption:= FloatToStr(newValue);
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  lblNumero.Caption:= lblNumero.Caption + '.';
+end;
 
    procedure TForm1.btEqualsClick(Sender: TObject);
    begin

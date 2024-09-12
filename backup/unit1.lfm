@@ -1,12 +1,11 @@
 object Form1: TForm1
-  Left = 1147
+  Left = 573
   Height = 620
-  Top = 163
+  Top = 230
   Width = 773
   Caption = 'Form1'
   ClientHeight = 620
   ClientWidth = 773
-  LCLVersion = '2.2.0.4'
   object bt1: TButton
     Tag = 1
     Left = 136
@@ -109,5 +108,37 @@ object Form1: TForm1
     Caption = '='
     OnClick = btEqualsClick
     TabOrder = 9
+  end
+  object btDel: TButton
+    Left = 461
+    Height = 59
+    Top = 77
+    Width = 173
+    Caption = '<--'
+    OnClick = btDelClick
+    TabOrder = 10
+  end
+  object btSignal: TButton
+    Left = 248
+    Height = 35
+    Top = 251
+    Width = 58
+    Caption = '+/-'
+    OnClick = btSignalClick
+    TabOrder = 11
+  end
+  object Button1: TButton
+    Left = 248
+    Height = 45
+    Top = 96
+    Width = 66
+    BorderSpacing.CellAlignHorizontal = ccaCenter
+    BorderSpacing.CellAlignVertical = ccaCenter
+    Caption = ','
+    Font.Height = -35
+    Font.Name = 'Sans'
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 12
   end
 end
